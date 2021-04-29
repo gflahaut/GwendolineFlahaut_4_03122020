@@ -971,8 +971,8 @@ h4 {
   .bloc-fill-screen .fill-bloc-top-edge,
   .bloc-fill-screen .fill-bloc-bottom-edge {
     padding: 0 20px;
-    padding-left: 0.25em);
-    padding-right:  0.25em);
+    padding-left: 0.25em;
+    padding-right:  0.25em;
   }
 }
 
