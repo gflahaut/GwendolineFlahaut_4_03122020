@@ -45,9 +45,6 @@ ul {
 .et-icon-presentation:before {
   content: url("../img/svg/presentation.svg");
 }
-span.fa {
-  display:none;
-}
 .fa-twitter:before {
   content: url("../img/svg/twitter-brands.svg");
 }
