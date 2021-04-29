@@ -358,7 +358,7 @@ a:hover, button:hover {
 }
 
 #bloc-1-hero h1 {
-  font-size: 32;
+  font-size: 3.2rem;
 }
 
 .navbar {
@@ -369,7 +369,7 @@ a:hover, button:hover {
 .navbar-brand {
   height: auto;
   padding: 3px 15px;
-  font-size: 25;
+  font-size: 2.5rem;
   font-weight: normal;
   font-weight: 600;
   line-height: 44px;
