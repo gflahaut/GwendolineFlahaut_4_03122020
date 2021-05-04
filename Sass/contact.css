@@ -322,6 +322,9 @@ nav .caret {
   z-index: 500;
   transition: all 0.3s ease-in-out;
 }
+.scrollToTop .fa .fa-chevron-up::after{
+content:"url(./img/svg/chevron-up-solid.svg);
+}
 
 .scrollToTop span {
   margin-top: 6px;
