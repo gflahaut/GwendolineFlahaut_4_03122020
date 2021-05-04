@@ -20,7 +20,10 @@ ul {
   width: 100px;
   height: 100px;
 }
-
+.prev-lightbox img, .next-lightbox img {
+    width: 50px;
+    height: 50px;
+}
 .et-icon {
   font-family: et-line;
   speak: auto;
