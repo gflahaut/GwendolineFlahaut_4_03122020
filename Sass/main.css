@@ -696,9 +696,11 @@ label,
 a {
   font-family: "helvetica";
   font-weight: 400;
-  color: #767676 !important;
+  color: #fff !important;
 }
-
+a:focus, a:hover {
+  color: #F1F1F1;
+}
 .container {
   max-width: 1000px;
 }
