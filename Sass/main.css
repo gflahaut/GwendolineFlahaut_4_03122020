@@ -663,13 +663,13 @@ a[data-lightbox]:hover img {
 }
 
 a.prev-lightbox::after {
-  content: url(./img/svg/chevron-circle-left-solid.svg);
+  content: url(../img/svg/chevron-circle-left-solid.svg);
   width: 75px;
   height: 75px;
 }
 
 a.next-lightbox::after {
-  content: url(./img/svg/chevron-circle-right-solid.svg);
+  content: url(../img/svg/chevron-circle-right-solid.svg);
   width: 75px;
   height: 75px;
 }
