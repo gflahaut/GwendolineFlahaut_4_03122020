@@ -20,13 +20,9 @@ ul {
   width: 100px;
   height: 100px;
 }
-.prev-lightbox img, .next-lightbox img {
-    width: 50px;
-    height: 50px;
-}
+
 .et-icon {
   font-family: et-line;
-  speak: auto;
   font-style: normal;
   font-weight: 400;
   font-variant: normal;
@@ -48,6 +44,7 @@ ul {
 .et-icon-presentation:before {
   content: url("../img/svg/presentation.svg");
 }
+
 .fa-twitter:before {
   content: url("../img/svg/twitter-brands.svg");
 }
@@ -64,9 +61,6 @@ ul {
   content: url("../img/svg/instagram-brands.svg");
 }
 
-.fa-title { 
-color: #FFFFFF;
-}
 .title, .citation {
   font-size: 2.18rem;
 }
@@ -620,17 +614,16 @@ a[data-lightbox]:hover img {
   position: absolute;
   left: 15px;
   right: 15px;
-  bottom: 5px;
+  bottom: -8px;
 }
 
 .close-lightbox {
-  color: #949494;
+  color: black;
   font-size: 3rem;
   position: absolute;
   top: 20px;
   right: 20px;
   z-index: 20;
-  background: rgba(0, 0, 0, 0.5);
   border: none;
   line-height: 30px;
   padding: 0 9px 5px;
@@ -648,7 +641,6 @@ a[data-lightbox]:hover img {
 .prev-lightbox {
   font-size: 2rem;
   color: rgba(255, 255, 255, 0.9);
-  background: rgba(0, 0, 0, 0.5);
   transition: all .2s ease-in-out;
   position: absolute;
   top: 45%;
@@ -659,11 +651,27 @@ a[data-lightbox]:hover img {
 .next-lightbox {
   padding: 6px 8px 1px 13px;
   right: 25px;
+  width: 75px;
+  height: 75px;
 }
 
 .prev-lightbox {
   padding: 6px 13px 1px 10px;
   left: 25px;
+  width: 75px;
+  height: 75px;
+}
+
+a.prev-lightbox::after {
+  content: url(./img/svg/chevron-circle-left-solid.svg);
+  width: 75px;
+  height: 75px;
+}
+
+a.next-lightbox::after {
+  content: url(./img/svg/chevron-circle-right-solid.svg);
+  width: 75px;
+  height: 75px;
 }
 
 .snapshot-lb.modal-body {
@@ -808,7 +816,7 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-  background-color: #9b0000;
+  background-color: #d43900;
 }
 
 .tc-white {
@@ -816,7 +824,7 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-  background: #9b0000;
+  background: #d43900;
   color: #FFFFFF !important;
 }
 
@@ -965,8 +973,8 @@ h4 {
     position: relative;
   }
   .bloc {
-    padding-left:  0.25em;
-    padding-right: 0.25em;
+    padding-left: constant(safe-area-inset-left);
+    padding-right: constant(safe-area-inset-right);
   }
   .bloc-group,
   .bloc-group .bloc {
@@ -976,8 +984,8 @@ h4 {
   .bloc-fill-screen .fill-bloc-top-edge,
   .bloc-fill-screen .fill-bloc-bottom-edge {
     padding: 0 20px;
-    padding-left: 0.25em;
-    padding-right:  0.25em;
+    padding-left: constant(safe-area-inset-left);
+    padding-right: constant(safe-area-inset-right);
   }
 }
 

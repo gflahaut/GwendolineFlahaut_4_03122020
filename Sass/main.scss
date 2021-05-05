@@ -56,7 +56,6 @@ ul{
 }
 .et-icon{
     font-family: et-line;
-    speak: auto;
     font-style: normal;
     font-weight: 400;
     font-variant: normal;
@@ -357,17 +356,12 @@ a, button {
         font-weight: 600;
         line-height: 44px;
     }
-    &-brand img{
-
-    }
     &-brand img[src$=svg] {
         min-width: 100px;
     }
-    
     .nav-center &-brand img {
         margin: 0;
     }
-    
     & .nav {
         padding-top: 2px;
         margin-right: -16px;
@@ -584,16 +578,15 @@ a[data-lightbox] {
     position: absolute;
     left: 15px;
     right: 15px;
-    bottom: 5px;
+    bottom: -8px;
 }
 .close-lightbox {
-    color: #949494;
+    color: black;
     font-size: size(30);
     position: absolute;
     top: 20px;
     right: 20px;
     z-index: 20;
-    background: rgba(0, 0, 0, .5);
     border: none;
     line-height: 30px;
     padding: 0 9px 5px;
@@ -611,7 +604,6 @@ a[data-lightbox] {
 .prev-lightbox {
     font-size: size(20);
     color: rgba(255, 255, 255, .9);
-    background: rgba(0, 0, 0, .5);
     transition: all .2s ease-in-out;
     position: absolute;
     top: 45%;
@@ -622,13 +614,26 @@ a[data-lightbox] {
 .next-lightbox {
     padding: 6px 8px 1px 13px;
     right: 25px;
+    width: 75px;
+    height: 75px;
 }
 
 .prev-lightbox {
     padding: 6px 13px 1px 10px;
     left: 25px;
+    width: 75px;
+    height: 75px;
 }
-
+a.prev-lightbox::after {
+    content: url(./img/svg/chevron-circle-left-solid.svg);
+    width: 75px;
+    height: 75px;
+}
+a.next-lightbox::after{
+    content: url(./img/svg/chevron-circle-right-solid.svg);
+    width: 75px;
+    height: 75px;
+}
 .snapshot-lb{
     &.modal-body {
         padding-bottom: 45px;

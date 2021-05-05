@@ -42,6 +42,10 @@ a {
   color: black;
 }
 
+a.bloc-button.btn.btn-d.scrollToTop.showScrollTop::after {
+  content: url(./img/svg/chevron-up-solid.svg);
+}
+
 .center-block {
   border-radius: 60em;
   width: 100%;
@@ -321,9 +325,6 @@ nav .caret {
   opacity: 0;
   z-index: 500;
   transition: all 0.3s ease-in-out;
-}
-.scrollToTop .fa .fa-chevron-up::after{
-content:"url(./img/svg/chevron-up-solid.svg);
 }
 
 .scrollToTop span {

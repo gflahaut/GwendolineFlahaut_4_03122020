@@ -34,6 +34,9 @@ a {
   font-weight: 500;
   color: black;
 }
+a.bloc-button.btn.btn-d.scrollToTop.showScrollTop::after {
+  content: url(./img/svg/chevron-up-solid.svg);
+}
 
 .center-block {
   border-radius: 60em;
